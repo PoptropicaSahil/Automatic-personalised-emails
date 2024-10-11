@@ -1,0 +1,9 @@
+2024-10-11 21:11:37,251 - INFO - Index=0, checking row from data: Sample Sample at Sample Company...
+2024-10-11 21:11:37,251 - INFO - Checking email to: loramolly093@gmail.com
+2024-10-11 21:11:41,432 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-11 21:11:47,640 - INFO - 	 Email sent to: loramolly093@gmail.com
+2024-10-11 21:11:47,640 - INFO - Index=1, checking row from data: Lora at Molly Cars...
+2024-10-11 21:11:47,640 - WARNING - Only single name provided, trying to send but highly likely it may not work... 
+2024-10-11 21:11:47,640 - INFO - Checking email to: loramolly093@gmail.com
+2024-10-11 21:11:48,020 - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-11 21:11:53,927 - INFO - 	 Email sent to: loramolly093@gmail.com

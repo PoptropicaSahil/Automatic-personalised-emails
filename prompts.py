@@ -8,7 +8,7 @@ class PROMPTS:
     If the company's name is empty, write generically about company's growing interest in AI
     Avoid using words like expertise, instead use experience or great interest. 
     Your response should begin with - 'I belive my work <fill here> can be impactful to your team at <company name>.'
-    Strictly DO NOT return anything else. Response should not cross 30 words.
+    Strictly DO NOT return anything else. Response should not cross 20 words.
     """
 
     system_prompt_sahil_background = """

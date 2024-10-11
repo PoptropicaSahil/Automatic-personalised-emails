@@ -96,6 +96,7 @@ The project utilizes the `yagmail` library to streamline sending personalized em
 
 ## TODOs
 * Support names with three words. Currently we only support 2
+* [FIXED] Currently we rename resumes hardocoded to Sahil Girhepuje only. Add logic to make it modular
 
 
 ## 🙌 A Big Shoutout!

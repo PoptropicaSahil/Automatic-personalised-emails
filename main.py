@@ -6,6 +6,8 @@ import shutil
 from openai_call import personalised_sentence
 import logging
 from config import CONFIG
+from utils import create_resume_filename
+
 
 load_dotenv()
 
@@ -19,6 +21,8 @@ logging.basicConfig(
 EMAIL_ID = os.getenv(key="EMAIL_ID")
 APP_PASSWORD = os.getenv(key="APP_PASSWORD")
 
+TESTING_RECIPIENT_MAIL = os.getenv(key="TESTING_RECIPIENT_MAIL")
+
 CONTACTS_FILE_PATH = CONFIG.CONTACTS_FILE_PATH
 BASE_RESUME_PATH = CONFIG.BASE_RESUME_PATH
 
@@ -31,6 +35,7 @@ def send_email(
     company_name,
     company_domain=None,
     company_suffix=None,
+    testing=False,
 ):
     # Generate email address
 
@@ -58,7 +63,9 @@ def send_email(
         first_name = recipient_name.split()[0]
         recipient_email = f"{first_name.lower()}@{company_domain}.{company_suffix}"
 
-    recipient_email = "loramolly093@gmail.com"
+    # Kept this as a test to ensure mails go to spam
+    if testing:
+        recipient_email = TESTING_RECIPIENT_MAIL
 
     logging.info(f"Checking email to: {recipient_email}")
 
@@ -72,7 +79,9 @@ def send_email(
     )
 
     # Copy and rename resume file
-    resume_filename = f"./resumes/Sahil_Resume_DataScience_{company_name}.pdf"
+    resume_filename = create_resume_filename(
+        resume_path=BASE_RESUME_PATH, company_name=company_name
+    )
     shutil.copy(src=BASE_RESUME_PATH, dst=resume_filename)
 
     # Send email
@@ -107,6 +116,7 @@ def main():
                     company_name=row["Company"],
                     company_domain=row["mail_domain"],
                     company_suffix=row["mail_suffix"],
+                    testing=True,
                 )
 
                 # Update DataFrame
