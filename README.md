@@ -95,7 +95,8 @@ Feel free to explore and modify the code as needed! If you want to change the LL
 The project utilizes the `yagmail` library to streamline sending personalized emails. 📨 It crafts messages tailored to each company using your background information and attaches your resume, renaming it with the company's suffix for added customization. This approach not only showcases your intent but also helps your application stand out! 🌟 With `yagmail` handling the email logistics, you can focus on making meaningful connections with potential employers!
 
 ## TODOs
-Think of a few! 
+* Support names with three words. Currently we only support 2
+
 
 ## 🙌 A Big Shoutout!
 A huge thank you to **Nick Singh** and **Jerry Lee** for their fantastic cold-email tricks and amazing content! Also to Jake Ryan for the awesome resume template! 🎉👏 

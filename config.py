@@ -1,12 +1,10 @@
 class CONFIG:
-
     # Ensure that the following paths are correct
     CONTACTS_FILE_PATH = "./contacts/contacts.xlsx"
     BASE_RESUME_PATH = "./resumes/jakes-resume.pdf"
 
     # Model from OpenRouter to use for personlisation
     model_name = "google/gemini-flash-1.5-8b"
-
 
     # Email Subject
     subject = "Walmart, IIT Madras Data Scientist for {company_name}"
@@ -23,5 +21,5 @@ class CONFIG:
         <li style="margin: 0; padding: 0; line-height: 1.2;"><strong>Led<strong> the 8-member IITM AI team at the 12th Inter-IIT Tech Meet</li>
     </ul>
     {openai_sentence} Looking forward to hearing from you!
-    Sahil
+    Sahil Girhepuje () <a href="https://www.linkedin.com/in/sahil-girhepuje/">[LinkedIn]</a>
     """
