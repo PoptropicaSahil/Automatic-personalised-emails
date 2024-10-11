@@ -54,7 +54,7 @@ pip install -r requirements.txt
 You'll need to create a `.env` file in the root directory of the project. This file will hold your sensitive information.
 Add the following lines to your `.env` file:
 ```text
-USERNAME = "<email id>"
+EMAIL_ID = "<email id>"
 APP_PASSWORD = "<app password for>"
 OPENROUTER_API_KEY = "<key>"
 ```

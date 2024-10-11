@@ -1,6 +1,6 @@
 class CONFIG:
     # Ensure that the following paths are correct
-    CONTACTS_FILE_PATH = "./contacts/contacts.xlsx"
+    CONTACTS_FILE_PATH = "./contacts/contacts-sample.xlsx"
     BASE_RESUME_PATH = "./resumes/jakes-resume.pdf"
 
     # Model from OpenRouter to use for personlisation
@@ -16,10 +16,11 @@ class CONFIG:
     
     Here are a few highlights from my resume:
     <ul style="margin: 0; padding: 0; list-style-position: inside;">
-        <li style="margin: 0; padding: 0; line-height: 1.2;"><strong>CGPA 9.22 from IIT Madras</strong>, BTech+MTech in Engineering Design and Data Science. 5 research papers live <a href="https://scholar.google.com/citations?user=bAR0zX8AAAAJ&hl=en">link</a></li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">Been at <strong>Walmart Global Tech, American Express</strong>, and Securin.io for a total of <strong>20 months</strong></li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;"><strong>Led<strong> the 8-member IITM AI team at the 12th Inter-IIT Tech Meet</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;"><strong>CGPA 9.22</strong> (highest!) from IIT Madras, BTech+MTech in Engineering Design and Data Science. 5 research papers live <a href="https://scholar.google.com/citations?user=bAR0zX8AAAAJ&hl=en">link</a></li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">Spent <strong>20 months</strong> at <strong>Walmart Global Tech, American Express</strong>, and Securin.io</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;"><strong>Led</strong> the 8-member IITM AI team at the 12th Inter-IIT Tech Meet</li>
     </ul>
     {openai_sentence} Looking forward to hearing from you!
-    Sahil Girhepuje () <a href="https://www.linkedin.com/in/sahil-girhepuje/">[LinkedIn]</a>
+
+    Sahil Girhepuje <a href="https://www.linkedin.com/in/sahil-girhepuje/">[LinkedIn]</a>
     """

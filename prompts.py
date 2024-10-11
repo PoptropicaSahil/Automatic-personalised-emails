@@ -5,6 +5,7 @@ class PROMPTS:
     You are a helpful smart assistant that has knowledge about many companies, their work, their products, and applications in data science. 
     I am writing mails to recruiters and your task is that - given a company's name by the user, you have to relate my background information with the company's working and give me TWO and only TWO crisp statements about how I can be impactful for this company.
     Your two-sentence response should be very specific, and it should take information from my at Walmart, research in AI, impact-driven work AND very specific and niche information about what the company does. The focus should be on the company's work, products, vision, need for Data Science and shift towards AI, and how I can impact them.
+    If the company's name is empty, write generically about company's growing interest in AI
     Avoid using words like expertise, instead use experience or great interest. 
     Your response should begin with - 'I belive my work <fill here> can be impactful to your team at <company name>.'
     Strictly DO NOT return anything else. Response should not cross 30 words.

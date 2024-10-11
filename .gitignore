@@ -1,5 +1,9 @@
 .env
 trials.ipynb
+cleaning.ipynb
+
+*.pyc
 
 /contacts/contacts.xlsx
+/contacts/contacts - Copy.xlsx
 resumes/Sahil*
