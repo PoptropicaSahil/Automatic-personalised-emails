@@ -19,18 +19,22 @@ BASE_RESUME_PATH = CONFIG.BASE_RESUME_PATH
 yag = yagmail.SMTP(user=USERNAME, password=APP_PASSWORD)
 
 
-def send_email(recipient_name, company_name):
+def send_email(recipient_name, company_name, company_email_domain = None):
     # Generate email address
+
+    # Some companies like American Express have domain as aexp
+    company_email_domain = company_name if not company_email_domain else company_email_domain
+    
     try:
         first_name = recipient_name.split()[0]
         last_name = recipient_name.split()[1]
         recipient_email = (
-        f"{first_name.lower()}.{last_name.lower()}@{company_name.lower()}.com"
+        f"{first_name.lower()}.{last_name.lower()}@{company_email_domain.lower()}.com"
     )
     except IndexError:
         logging.warning("ERROR: Only single name provided, trying to send but highly likely it may not work... ")
         first_name = recipient_name.split()[0]
-        recipient_email = f"{first_name.lower()}@{company_name.lower()}.com"
+        recipient_email = f"{first_name.lower()}@{company_email_domain.lower()}.com"
 
     recipient_email = "loramolly093@gmail.com"
 
@@ -76,7 +80,9 @@ def main():
         if row["Sent_Indicator"].strip().lower() != "yes":
             try:
                 recipient_email = send_email(
-                    recipient_name=row["Name"], company_name=row["Company"]
+                    recipient_name=row["Name"], 
+                    company_name=row["Company"],
+                    company_email_domain=row["mail_suffix"]
                 )
 
                 # Update DataFrame
