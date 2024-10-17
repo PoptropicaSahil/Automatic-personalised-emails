@@ -22,8 +22,8 @@ A fairly simple, fairly basic, automatic mail-sender to recruiters! Personalised
 First things first, clone the repository to your local machine:
 bash
 ```bash
-git clone https://github.com/yourusername/repo-name.git
-cd repo-name
+git clone https://github.com/PoptropicaSahil/Automatic-personalised-emails.git
+cd Automatic-personalised-emails
 ```
 
 ## 2. Create a Virtual Environment 🐍
